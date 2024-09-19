@@ -4,16 +4,10 @@
         <meta charset="utf-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <title>2024 Subaru Crosstrek</title>
+        <!-- bootstrap 3 CSS -->
+        <link rel="text/html" href="bootstrap.min.css">
+        <link href="https://stackpath.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css" rel="stylesheet">
         <link rel="stylesheet" href="/css/styles.css">
-
-         <!-- Bootstrap 3 CSS -->
-        <link href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" rel="stylesheet">
-
-        <!-- jQuery (required for Bootstrap's JavaScript plugins) -->
-        <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
-
-        <!-- Bootstrap 3 JavaScript -->
-        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
     </head>
 
 
@@ -22,12 +16,11 @@
          <nav class="navbar navbar-inverse navbar-fixed-top">
             <div class="container-fluid">
               <div class="navbar-header">
-                <!-- <img src="/images/logo.png" alt="Subaru-Logo"> -->
                 <a class="navbar-brand" href="#" style="font-size: 24px;">Subaru</a>
               </div>
               <ul class="nav navbar-nav navbar-right nav-links">
-                <li><a href="#features">Features</a></li>
-                <li><a href="#contact">Contact</a></li>
+                <li ><a id="link" href="#features">Features</a></li>
+                <li ><a class="nav-link" href="#contact">Contact</a></li>
               </ul>
             </div>
           </nav>
@@ -36,22 +29,22 @@
          <!-- full-screen hero section -->
         <div class="hero-section">
             <div class="hero-overlay"></div> <!-- dark overlay for text contrast -->
-            <div class="hero-content">
-            <h1>The 2024 SUBARU CROSSTREK</h1>
-            <p style="font-size: 24px; font-style: italic;">
-                in Charlotte, NC
-            </p>
-            <p style="font-size: 32px; font-weight: 600;">
-                MSRP $28,245
-            </p>
-            <a href="#features" class="btn btn-primary btn-lg hero-btn">Explore Features</a>
+            <div id="hero-content">
+                <h1 id="hero-header">The 2024 SUBARU CROSSTREK</h1>
+                <p class="hero-info" style="font-size: 24px; font-style: italic;">
+                    in Charlotte, NC
+                </p>
+                <p class="hero-info" style="font-size: 32px; font-weight: 600;">
+                    MSRP $28,245
+                </p>
+                <a href="#features" class="btn btn-primary btn-lg hero-btn">Explore Features</a>
             </div>
         </div>
 
         <!-- description -->
-        <div class="desc">
-            <h1>Always room for stories.</h1>
-            <p style="font-size: 18px; line-height: 3rem;">
+        <div class="desc-content">
+            <h1 class="desc-header">Always room for stories.</h1>
+            <p class="desc" style="font-size: 18px; line-height: 3rem;">
                 The 2024 Subaru Crosstrek is the most powerful, most fun to drive, and safest Crosstrek we’ve ever made, with performance, technology, and design updates throughout.
             </p>
             <button type="button" href="/searchnew" class="btn-search btn btn-info btn-lg">Available Inventory</button>
@@ -107,7 +100,8 @@
             <!-- info row -->
             <div class="row info">
                 <div class="col-md-2">
-                    MSRP $28,245
+                    MSRP
+                    <br>$28,245
                 </div>
                     <div class="col-md-2 info-mpg">
                             MPG
@@ -148,7 +142,7 @@
 
 
 
-        <script src="index.js"></script>
+        <script src="/js/index.js"></script>
         <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
         <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
     </body>
