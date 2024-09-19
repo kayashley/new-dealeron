@@ -39,6 +39,8 @@ a {
   align-items: center;
   color: white;
   text-align: center;
+
+  animation: fadeIn 2s ease-in-out;
 }
 
 .hero-overlay {
@@ -96,6 +98,8 @@ a {
   margin-right: auto;
   text-align: center;
   margin-top: 80px;
+
+  animation: fadeInTop 2s ease-out;
 }
 
 /* featured section */
@@ -104,6 +108,8 @@ a {
 
   padding: 30px;
   margin: auto;
+
+  animation: fadeInLeft 3s ease-in forwards;
 }
 
 .feature-box {
@@ -146,6 +152,8 @@ a {
 
   padding: 30px;
   gap: 200px;
+
+  animation: fadeIn 3s ease-in-out;
 }
 
 .info-mpg {
@@ -191,6 +199,7 @@ footer {
   color: inherit;
 }
 
+/* responsiveness */
 @media only screen and (max-width: 600px) {
   /* description section */
   .desc-header {
@@ -240,5 +249,37 @@ footer {
   }
   .info {
     gap: 1.1rem;
+  }
+}
+
+/* animation */
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+@keyframes fadeInTop {
+  from {
+    opacity: 0;
+    transform: translateY(-30px); /* starting position */
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0); /* end position */
+  }
+}
+
+@keyframes fadeInLeft {
+  from {
+    opacity: 0;
+    transform: translateX(-30px); /* starting position */
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0); /* end position */
   }
 }
