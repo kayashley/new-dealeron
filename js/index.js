@@ -1,4 +1,4 @@
-const navItem = document.querySelectorAll("li");
+const navItem = document.querySelectorAll("li"); // selects li
 
 navItem.forEach((element) => {
   element.addEventListener("click", function () {
